@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Myapps</string>
+
+    <string name="food">FRESH FOOD</string>
+    <string name="delivery">FAST DELIVERY</string>
+    <string name="payment">EASY PAYMENT</string>
+    <string name="tias">Digunakan Untuk Memenuhi Tugas Studi Independen The Presiden</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
