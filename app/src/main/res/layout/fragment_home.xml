@@ -4,26 +4,194 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never"
+    android:scrollbars="vertical">
 
     <LinearLayout
+        android:id="@+id/ly1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/delivery_to"
-        android:layout_width="290dp"
-        android:layout_height="20dp"
+        android:id="@+id/hallo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:gravity="center_horizontal|top"
         android:lineSpacingExtra="4sp"
-        android:text="Hello!!"
-        android:textColor="@color/colorPrimary"
+        android:text="Hay, Welcome back Tias"
+        android:textColor="@color/yellow_fdd"
         android:fontFamily="@font/poppinssemibold"
-        android:translationY="-2.02sp" />
+        />
+
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
     </LinearLayout>
+</ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ly2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:paddingStart="@dimen/dp_10"
+            android:layout_width="348dp"
+            android:layout_height="204dp"
+            android:src="@drawable/bitmap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="30dp"
+            android:text="Best Picks\nRestaurant by Teams"
+            android:textSize="@dimen/dp_18"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/yellow_e5a"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ly3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ly4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="100dp"
+                android:src="@drawable/m1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="The Halay Guys"
+                android:textSize="@dimen/dp_14"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="100dp"
+                android:text="Campurdarat, TA"
+                android:textSize="@dimen/dp_12"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly5"
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:gravity=""
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_5"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/m2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="The Rice SoNice"
+                android:textSize="@dimen/dp_14"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Campurdarat, TA"
+                android:textSize="@dimen/dp_12"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/ly6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/img_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/promo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="All Menu"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/yellow_e5a"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:id="@+id/img_6"
+                android:layout_width="421dp"
+                android:layout_height="match_parent"
+                android:paddingStart="-20dp"
+                android:paddingEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/m3" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
